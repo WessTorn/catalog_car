@@ -1,10 +1,10 @@
 package main
 
 import (
-	"igor/config"
-	"igor/data"
-	"igor/logger"
-	"igor/queries"
+	"github.com/WessTorn/catalog_car/config"
+	"github.com/WessTorn/catalog_car/data"
+	"github.com/WessTorn/catalog_car/logger"
+	"github.com/WessTorn/catalog_car/queries"
 	"os"
 	//_ "igor/docs"
 )

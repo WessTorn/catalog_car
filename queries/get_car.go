@@ -2,10 +2,10 @@ package queries
 
 import (
 	"fmt"
+	"github.com/WessTorn/catalog_car/data"
+	"github.com/WessTorn/catalog_car/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/go-pg/pg/v10"
-	"igor/data"
-	"igor/logger"
 	"net/http"
 	"os"
 	"strconv"

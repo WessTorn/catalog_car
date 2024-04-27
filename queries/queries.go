@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/go-pg/pg/v10"
-	"igor/logger"
 	//"github.com/swaggo/files"
 	//"github.com/swaggo/gin-swagger"
-	"igor/data"
+	"github.com/WessTorn/catalog_car/data"
+	"github.com/WessTorn/catalog_car/logger"
 	"net/http"
 	"os"
 )

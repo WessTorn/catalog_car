@@ -1,4 +1,4 @@
-module igor
+module github.com/WessTorn/catalog_car
 
 go 1.22
 
