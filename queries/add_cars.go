@@ -62,7 +62,7 @@ func AddCar(c *gin.Context, db *pg.DB) {
 		var existingOwner data.Owner
 		err = db.Model(&existingOwner).Where("name = ? AND surname = ? AND patronymic = ?", carData.Owner.Name, carData.Owner.Surname, carData.Owner.Patronymic).First()
 
-		if err != nil {
+		if err != nil && err != pg.ErrNoRows {
 			logger.Log.Debug("[error] Failed to check existing owner: " + fmt.Sprintf("%+v", err))
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to check existing owner"})
 			continue
